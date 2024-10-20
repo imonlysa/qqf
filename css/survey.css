@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+}
+.survey-wrapper{
+    padding-bottom: 250px;
+    padding-top: 156px;
+    min-height: 100dvh;
+	background: #f57600;
+}
+.survey-step{
+	font-family: 'Open Sans';
+}
+*{
+    box-sizing: border-box;
+}
+.survey-container{
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.step-title{
+	font-size: 36px;
+	font-weight: 900;
+    line-height: 1.125em;
+    color: #054fb9;
+}
+[data-slug="introduction"] .step-title, [data-slug="result"] .step-title{
+	color: #fff;
+}
+.step-subtitle {
+    font-size: 21px;
+    line-height: 1.375em;
+	font-family: 'Open Sans';
+	color: #fff;
+}
+[data-slug="introduction"] .survey-text-content{
+	max-width: 630px;
+	width: 100%;
+}
+[data-slug="result"] .survey-text-content{
+	max-width: 780px;
+	width: calc(100% - 300px);
+}
+.survey-button{
+	border-radius: 5px;
+    display: inline-block;
+    padding: 0.75em 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s ease all;
+    border: 1px solid #fff;
+    color: #0073e6;
+	font-family: 'Open Sans';
+	border: 1px solid #fff;
+	text-decoration: none;
+    background: #fff;
+}
+[data-slug="introduction"] .survey-button:not(:hover), [data-slug="result"] .survey-button:not(:hover){
+	background: none;
+	color: #fff;
+}
+.survey-button:hover {
+    background: #0073e6;
+    color: #fff;
+	border-color: #0073e6;
+}
+.survey-wrapper-2{
+	background: #f0f1f1;
+    padding-bottom: 250px;
+    padding-top: 156px;
+}
+.multiple-options .option {
+    padding-left: 0;
+    position: relative;
+    font-size: 17px;
+}.multiple-options .option label{
+    padding-left: 30px;
+    transition: 0.3s ease all;
+    cursor: pointer;
+	color: grey;
+    display: inline-block;
+        font-family: 'Open Sans';
+}
+.multiple-options .option input{
+    display: none;
+}
+
+.multiple-options .option svg{
+        position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    pointer-events: none;
+    cursor: pointer;
+    border: 1px solid #9f9596;
+}
+.multiple-options .option + .option {
+    margin-top: 1.25em;
+}
+.survey-text-content{
+    margin-right: 300px;
+}
+
+.multiple-options .option svg path{
+    stroke: #0073e6;
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    stroke-dasharray: 0, 129px;
+    stroke-dashoffset: 0;
+    transition: stroke-dasharray 0.2s ease-in-out 0s;
+    opacity: 0;
+}
+.multiple-options .option input:checked ~ svg path{
+    stroke-dasharray: 129px, 189px;
+    opacity: 1;
+} 
+.multiple-options .option .explanatory-text {
+    font-size: 0.8em;
+    font-style: italic;
+}
+.prev-button {
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+	color: #0073e6;
+	display: inline-block;
+	margin-left: 15px;
+}
+.prev-button:hover, .back-to-start:hover{
+	text-decoration: none;
+}
+.survey-button-container{
+	margin-top: 3em;
+}
+.small-text {
+    color: #0073e6;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+	display: inline-block;
+	vertical-align: top;
+}
+.field-input {
+    padding-left: 20px;
+    position: relative;
+}
+.radio-input {
+    padding-left: 25px;
+    position: relative;
+    line-height: 2em;
+}
+.radio-input label{
+    color: grey;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 1.375;
+	padding-left: 30px;
+	margin-left: -30px;
+	cursor: pointer;
+}
+
+.radio-input input{
+    display: none;
+}
+.radio-input svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    pointer-events: none;
+    cursor: pointer;
+    border: 1px solid #9f9596;
+    border-radius: 50%;
+}
+.radio-input svg path{
+        stroke: #0073e6;
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+        stroke-dasharray: 0, 586.364;
+    opacity: 0;
+}
+.radio-input input:checked ~ svg path{
+    opacity: 1;
+        stroke-dasharray: 586.364, 586.364;
+    stroke-dashoffset: 0;
+    transition: stroke-dasharray 0.8s ease-in 0s;
+}
+.radio-input + .radio-input{
+    margin-top: 0.66em;
+}
+.step-title em{
+    color: #0073e6;
+    font-style: normal;
+}
+.survey-step{
+	display: none;
+}
+.survey-step.active{
+	display: block;
+}
+.recommended-car {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: #fff;
+    border-radius: 10px;
+    color: #0073e6;
+    padding: 30px;
+}
+.small-text{
+	display: block;
+    color: #0073e6;
+}
+.car-title {
+    font-size: 90px;
+    color: #0073e6;
+	display: block;
+}
+.back-to-start {
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+@media (max-width: 1040px) {
+	.car-title{
+		font-size: 6.4vw;
+	}
+	[data-slug="result"] .survey-text-content {
+		max-width: 780px;
+		width: calc(100% - 120px);
+		margin-right: 0;
+	}	
+}
+@media (max-width: 480px) {
+	[data-slug="result"] .survey-text-content{
+		width: 100%;
+		max-width: 100%;
+	}
+}

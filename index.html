@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Quiz</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/survey.css">
+</head>
+
+<body>
+	<div class="survey-step active" data-slug="introduction">
+    <div class="survey-wrapper">
+        <div class="survey-container">
+            <div class="survey-text-content cf">
+                <h1 class="step-title">What type of car should I rent?</h1>
+                <p class="step-subtitle">Find out the best car rental option based on your needs.
+                    Take our test to find a package that’s perfect for you!</p>
+                <div class="survey-button-container">
+                    <a class="survey-button next-button type-hollow">Let's get started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="survey-step" data-slug="step_1">
+    <div class="survey-wrapper-2">
+        <div class="survey-container">
+            <div class="survey-text-content">
+                <h2 class="step-title">How will you use the rental car? <span class="small-text">Choose all that apply</span></h2>
+                <div class="multiple-options">
+                    <div class="option">
+                        <input type="checkbox" id="field-step_1-0" name="step_1[0]" data-name="0" value="0" data-value="Basic city driving">
+                        <label for="field-step_1-0">Basic city driving <span class="explanatory-text">(daily errands, commuting, short trips)</span></label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.667,62.167c3.109,5.55,7.217,10.591,10.926,15.75 c2.614,3.636,5.149,7.519,8.161,10.853c-0.046-0.051,1.959,2.414,2.692,2.343c0.895-0.088,6.958-8.511,6.014-7.3 c5.997-7.695,11.68-15.463,16.931-23.696c6.393-10.025,12.235-20.373,18.104-30.707C82.004,24.988,84.802,20.601,87,16">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="field-step_1-1" name="step_1[1]" data-name="1" value="1" data-value="Long road trips">
+                        <label for="field-step_1-1">Long road trips <span class="explanatory-text">(family vacations, cross-country trips)</span></label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.667,62.167c3.109,5.55,7.217,10.591,10.926,15.75 c2.614,3.636,5.149,7.519,8.161,10.853c-0.046-0.051,1.959,2.414,2.692,2.343c0.895-0.088,6.958-8.511,6.014-7.3 c5.997-7.695,11.68-15.463,16.931-23.696c6.393-10.025,12.235-20.373,18.104-30.707C82.004,24.988,84.802,20.601,87,16">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="field-step_1-2" name="step_1[2]" data-name="2" value="2" data-value="Luxury or special occasions">
+                        <label for="field-step_1-2">Luxury or special occasions <span class="explanatory-text">(weddings, business trips, VIP events)</span></label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.667,62.167c3.109,5.55,7.217,10.591,10.926,15.75 c2.614,3.636,5.149,7.519,8.161,10.853c-0.046-0.051,1.959,2.414,2.692,2.343c0.895-0.088,6.958-8.511,6.014-7.3 c5.997-7.695,11.68-15.463,16.931-23.696c6.393-10.025,12.235-20.373,18.104-30.707C82.004,24.988,84.802,20.601,87,16">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="field-step_1-3" name="step_1[3]" data-name="3" value="3" data-value="Off-road adventures">
+                        <label for="field-step_1-3">Off-road adventures <span class="explanatory-text">(camping, hiking, rural travel)</span></label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.667,62.167c3.109,5.55,7.217,10.591,10.926,15.75 c2.614,3.636,5.149,7.519,8.161,10.853c-0.046-0.051,1.959,2.414,2.692,2.343c0.895-0.088,6.958-8.511,6.014-7.3 c5.997-7.695,11.68-15.463,16.931-23.696c6.393-10.025,12.235-20.373,18.104-30.707C82.004,24.988,84.802,20.601,87,16">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="field-step_1-4" name="step_1[4]" data-name="4" value="4" data-value="Business travel">
+                        <label for="field-step_1-4">Business travel <span class="explanatory-text">(work trips, client meetings, airport commutes)</span></label>
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.667,62.167c3.109,5.55,7.217,10.591,10.926,15.75 c2.614,3.636,5.149,7.519,8.161,10.853c-0.046-0.051,1.959,2.414,2.692,2.343c0.895-0.088,6.958-8.511,6.014-7.3 c5.997-7.695,11.68-15.463,16.931-23.696c6.393-10.025,12.235-20.373,18.104-30.707C82.004,24.988,84.802,20.601,87,16">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+				<div class="survey-button-container">
+						<a class="survey-button next-button">Next Question</a>
+						<a class="prev-button">Previous Question</a>
+					</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="survey-step" data-slug="step_2">
+    <div class="survey-wrapper-2">
+        <div class="survey-container">
+            <div class="survey-text-content">
+                <h2 class="step-title">What size of car do you need? <span class="small-text">Select one</span></h2>
+                <div class="radio-input cf">
+                    <input type="radio" id="field-step_2-0" name="step_2" data-name="0" value="0" data-value="Compact">
+                    <label for="field-step_2-0">Compact <span class="explanatory-text">(easy to park, fuel-efficient)</span></label>
+					<svg viewBox="0 0 100 100"
+									xmlns="http://www.w3.org/2000/svg"><path d="M49.346,46.341c-3.79-2.005,3.698-10.294,7.984-8.89 c8.713,2.852,4.352,20.922-4.901,20.269c-4.684-0.33-12.616-7.405-14.38-11.818c-2.375-5.938,7.208-11.688,11.624-13.837 c9.078-4.42,18.403-3.503,22.784,6.651c4.049,9.378,6.206,28.09-1.462,36.276c-7.091,7.567-24.673,2.277-32.357-1.079 c-11.474-5.01-24.54-19.124-21.738-32.758c3.958-19.263,28.856-28.248,46.044-23.244c20.693,6.025,22.012,36.268,16.246,52.826 c-5.267,15.118-17.03,26.26-33.603,21.938c-11.054-2.883-20.984-10.949-28.809-18.908C9.236,66.096,2.704,57.597,6.01,46.371 c3.059-10.385,12.719-20.155,20.892-26.604C40.809,8.788,58.615,1.851,75.058,12.031c9.289,5.749,16.787,16.361,18.284,27.262 c0.643,4.698,0.646,10.775-3.811,13.746"></path></svg>
+                </div>
+                <div class="radio-input cf">
+                    <input type="radio" id="field-step_2-1" name="step_2" data-name="1" value="1" data-value="Midsize">
+                    <label for="field-step_2-1">Midsize <span class="explanatory-text">(comfortable for small families)</span></label>
+					<svg viewBox="0 0 100 100"
+									xmlns="http://www.w3.org/2000/svg"><path d="M49.346,46.341c-3.79-2.005,3.698-10.294,7.984-8.89 c8.713,2.852,4.352,20.922-4.901,20.269c-4.684-0.33-12.616-7.405-14.38-11.818c-2.375-5.938,7.208-11.688,11.624-13.837 c9.078-4.42,18.403-3.503,22.784,6.651c4.049,9.378,6.206,28.09-1.462,36.276c-7.091,7.567-24.673,2.277-32.357-1.079 c-11.474-5.01-24.54-19.124-21.738-32.758c3.958-19.263,28.856-28.248,46.044-23.244c20.693,6.025,22.012,36.268,16.246,52.826 c-5.267,15.118-17.03,26.26-33.603,21.938c-11.054-2.883-20.984-10.949-28.809-18.908C9.236,66.096,2.704,57.597,6.01,46.371 c3.059-10.385,12.719-20.155,20.892-26.604C40.809,8.788,58.615,1.851,75.058,12.031c9.289,5.749,16.787,16.361,18.284,27.262 c0.643,4.698,0.646,10.775-3.811,13.746"></path></svg>
+                </div>
+                <div class="radio-input cf">
+                    <input type="radio" id="field-step_2-2" name="step_2" data-name="2" value="2" data-value="Full-size">
+                    <label for="field-step_2-2">Full-size <span class="explanatory-text">(more space for luggage and passengers)</span></label>
+					<svg viewBox="0 0 100 100"
+									xmlns="http://www.w3.org/2000/svg"><path d="M49.346,46.341c-3.79-2.005,3.698-10.294,7.984-8.89 c8.713,2.852,4.352,20.922-4.901,20.269c-4.684-0.33-12.616-7.405-14.38-11.818c-2.375-5.938,7.208-11.688,11.624-13.837 c9.078-4.42,18.403-3.503,22.784,6.651c4.049,9.378,6.206,28.09-1.462,36.276c-7.091,7.567-24.673,2.277-32.357-1.079 c-11.474-5.01-24.54-19.124-21.738-32.758c3.958-19.263,28.856-28.248,46.044-23.244c20.693,6.025,22.012,36.268,16.246,52.826 c-5.267,15.118-17.03,26.26-33.603,21.938c-11.054-2.883-20.984-10.949-28.809-18.908C9.236,66.096,2.704,57.597,6.01,46.371 c3.059-10.385,12.719-20.155,20.892-26.604C40.809,8.788,58.615,1.851,75.058,12.031c9.289,5.749,16.787,16.361,18.284,27.262 c0.643,4.698,0.646,10.775-3.811,13.746"></path></svg>
+                </div>
+                <div class="radio-input cf">
+                    <input type="radio" id="field-step_2-3" name="step_2" data-name="3" value="3" data-value="SUV">
+                    <label for="field-step_2-3">SUV <span class="explanatory-text">(ideal for off-road or larger groups)</span></label>
+					<svg viewBox="0 0 100 100"
+									xmlns="http://www.w3.org/2000/svg"><path d="M49.346,46.341c-3.79-2.005,3.698-10.294,7.984-8.89 c8.713,2.852,4.352,20.922-4.901,20.269c-4.684-0.33-12.616-7.405-14.38-11.818c-2.375-5.938,7.208-11.688,11.624-13.837 c9.078-4.42,18.403-3.503,22.784,6.651c4.049,9.378,6.206,28.09-1.462,36.276c-7.091,7.567-24.673,2.277-32.357-1.079 c-11.474-5.01-24.54-19.124-21.738-32.758c3.958-19.263,28.856-28.248,46.044-23.244c20.693,6.025,22.012,36.268,16.246,52.826 c-5.267,15.118-17.03,26.26-33.603,21.938c-11.054-2.883-20.984-10.949-28.809-18.908C9.236,66.096,2.704,57.597,6.01,46.371 c3.059-10.385,12.719-20.155,20.892-26.604C40.809,8.788,58.615,1.851,75.058,12.031c9.289,5.749,16.787,16.361,18.284,27.262 c0.643,4.698,0.646,10.775-3.811,13.746"></path></svg>
+                </div>
+                <div class="radio-input cf">
+                    <input type="radio" id="field-step_2-4" name="step_2" data-name="4" value="4" data-value="Luxury">
+                    <label for="field-step_2-4">Luxury <span class="explanatory-text">(for special occasions or comfort)</span></label>
+					<svg viewBox="0 0 100 100"
+									xmlns="http://www.w3.org/2000/svg"><path d="M49.346,46.341c-3.79-2.005,3.698-10.294,7.984-8.89 c8.713,2.852,4.352,20.922-4.901,20.269c-4.684-0.33-12.616-7.405-14.38-11.818c-2.375-5.938,7.208-11.688,11.624-13.837 c9.078-4.42,18.403-3.503,22.784,6.651c4.049,9.378,6.206,28.09-1.462,36.276c-7.091,7.567-24.673,2.277-32.357-1.079 c-11.474-5.01-24.54-19.124-21.738-32.758c3.958-19.263,28.856-28.248,46.044-23.244c20.693,6.025,22.012,36.268,16.246,52.826 c-5.267,15.118-17.03,26.26-33.603,21.938c-11.054-2.883-20.984-10.949-28.809-18.908C9.236,66.096,2.704,57.597,6.01,46.371 c3.059-10.385,12.719-20.155,20.892-26.604C40.809,8.788,58.615,1.851,75.058,12.031c9.289,5.749,16.787,16.361,18.284,27.262 c0.643,4.698,0.646,10.775-3.811,13.746"></path></svg>
+                </div>
+            </div>
+			<div class="survey-button-container">
+					<a class="survey-button next-button">Next Question</a>
+					<a class="prev-button">Previous Question</a>
+				</div>
+        </div>
+    </div>
+</div>
+
+	<div class="survey-step" data-slug="result">
+		<div class="survey-wrapper">
+			<div class="survey-container">
+				<div class="survey-text-content">
+					<h2 class="step-title">We recommend:</h2>
+					<div class="recommended-car">
+						<h2 class="car-title">
+							<span class="car-value"></span>
+						</h2>
+					</div>
+					<div class="survey-button-container">
+						<a href="#" title="Contact Us" target="_blank" class="survey-button type-hollow">Contact Us</a>			<a class="back-to-start" href="#step-introduction">Retake Test</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
